@@ -1,0 +1,103 @@
+package bean
+
+import bean.CaseClass.LogData
+
+object CaseClassHelper {
+
+  /**
+    * Get LogDat From Row
+    *
+    * @param row
+    * @return
+    */
+  def getLogDataFromRow(row: Array[String]) = {
+    LogData(
+      row(0),
+      //The Following Parameters Can be Optimized By using Method
+      if (row(1) == "") 0 else row(1).toInt,
+      if (row(2) == "") 0 else row(2).toInt,
+      if (row(3) == "") 0 else row(3).toInt,
+      if (row(4) == "") 0 else row(4).toInt,
+      row(5),
+      row(6),
+      if (row(7) == "") 0 else row(7).toInt,
+      if (row(8) == "") 0 else row(8).toInt,
+      if (row(9) == "") 0.0 else row(9).toDouble,
+      if (row(10) == "") 0.0 else row(10).toDouble,
+      row(11),
+      row(12),
+      row(13),
+      row(14),
+      row(15),
+      row(16),
+      if (row(17) == "") 0 else row(17).toInt,
+      row(18),
+      row(19),
+      if (row(20) == "") 0 else row(20).toInt,
+      if (row(21) == "") 0 else row(21).toInt,
+      row(22),
+      row(23),
+      row(24),
+      row(25),
+      if (row(26) == "") 0 else row(26).toInt,
+      row(27),
+      if (row(28) == "") 0 else row(28).toInt,
+      row(29),
+      if (row(30) == "") 0 else row(30).toInt,
+      if (row(31) == "") 0 else row(31).toInt,
+      if (row(32) == "") 0 else row(32).toInt,
+      row(33),
+      if (row(34) == "") 0 else row(34).toInt,
+      if (row(35) == "") 0 else row(35).toInt,
+      if (row(36) == "") 0 else row(36).toInt,
+      row(37),
+      if (row(38) == "") 0 else row(38).toInt,
+      if (row(39) == "") 0 else row(39).toInt,
+      if (row(40) == "") 0.0 else row(40).toDouble,
+      if (row(41) == "") 0.0 else row(41).toDouble,
+      if (row(42) == "") 0 else row(42).toInt,
+      row(43),
+      if (row(44) == "") 0.0 else row(44).toDouble,
+      if (row(45) == "") 0.0 else row(45).toDouble,
+      row(46),
+      row(47),
+      row(48),
+      row(49),
+      row(50),
+      row(51),
+      row(52),
+      row(53),
+      row(54),
+      row(55),
+      row(56),
+      if (row(57) == "") 0 else row(57).toInt,
+      if (row(58) == "") 0 else row(58).toDouble,
+      if (row(59) == "") 0 else row(59).toInt,
+      if (row(60) == "") 0 else row(60).toInt,
+      row(61),
+      row(62),
+      row(63),
+      row(64),
+      row(65),
+      row(66),
+      row(67),
+      row(68),
+      row(69),
+      row(70),
+      row(71),
+      row(72),
+      if (row(73) == "") 0 else row(73).toInt,
+      if (row(74) == "") 0.0 else row(74).toDouble,
+      if (row(75) == "") 0.0 else row(75).toDouble,
+      if (row(76) == "") 0.0 else row(76).toDouble,
+      if (row(77) == "") 0.0 else row(77).toDouble,
+      if (row(78) == "") 0.0 else row(78).toDouble,
+      row(79),
+      row(80),
+      row(81),
+      row(82),
+      row(83),
+      if (row(84) == "") 0 else row(84).toInt)
+  }
+
+}
