@@ -50,7 +50,7 @@ public class ESUtils {
 //        }else{
 //            client.addTransportAddress(new InetSocketTransportAddress(InetAddress.getByName("hadoop03"),9300));
 //        }
-
+		System.setProperty("es.set.netty.runtime.available.processors", "false");
         client.addTransportAddress(new TransportAddress(InetAddress.getByName("node245"), 9300));
         return client;
     }
