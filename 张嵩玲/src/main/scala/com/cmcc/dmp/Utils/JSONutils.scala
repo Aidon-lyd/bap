@@ -5,7 +5,7 @@ import com.alibaba.fastjson.{JSON, JSONArray, JSONObject}
 import scala.collection.JavaConversions._
 
 /**
-  * requirement 
+  * requirement  解析商圈json格式
   *
   * @author zhangsl
   * @date 2019/12/10 9:48 

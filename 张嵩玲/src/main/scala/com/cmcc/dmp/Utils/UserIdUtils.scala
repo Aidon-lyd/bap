@@ -5,7 +5,7 @@ import org.apache.spark.sql.Row
 
 
 /**
-  * requirement 
+  * requirement  获取所有userId
   *
   * @author zhangsl
   * @date 2019/12/11 10:31 

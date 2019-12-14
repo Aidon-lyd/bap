@@ -8,7 +8,7 @@ import scala.collection.mutable.ArrayBuffer
 import scala.util.control.Breaks.{break, breakable}
 
 /**
-  * requirement 
+  * requirement  标签工具类
   *
   * @author zhangsl
   * @date 2019/12/11 11:45 

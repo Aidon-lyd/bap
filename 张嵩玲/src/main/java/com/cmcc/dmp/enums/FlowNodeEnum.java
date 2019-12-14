@@ -4,7 +4,7 @@ import java.util.Arrays;
 import java.util.List;
 
 /**
- * requirement
+ * requirement  请求枚举类
  *
  * @author zhangsl
  * @version 1.0

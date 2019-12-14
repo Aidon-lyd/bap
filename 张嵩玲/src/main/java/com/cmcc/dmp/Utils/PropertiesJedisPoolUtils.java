@@ -6,7 +6,7 @@ import java.io.IOException;
 import java.util.Properties;
 
 /**
- * requirement
+ * requirement  参数文件获取值
  *
  * @author zhangsl
  * @version 1.0

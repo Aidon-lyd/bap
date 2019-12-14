@@ -1,7 +1,7 @@
 package com.cmcc.dmp.Utils
 
 /**
-  * requirement 
+  * requirement 数字类型处理工具类
   *
   * @author zhangsl
   * @date 2019/12/6 16:13 

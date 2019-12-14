@@ -1,7 +1,7 @@
 package com.cmcc.dmp.common;
 
 /**
- * requirement
+ * requirement  常量工具
  *
  * @author zhangsl
  * @version 1.0

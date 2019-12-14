@@ -6,7 +6,7 @@ import redis.clients.jedis.JedisPool;
 import redis.clients.jedis.JedisPoolConfig;
 
 /**
- * requirement
+ * requirement   redis连接池
  *
  * @author zhangsl
  * @version 1.0

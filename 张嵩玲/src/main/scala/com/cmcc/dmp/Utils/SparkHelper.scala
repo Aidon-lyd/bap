@@ -5,7 +5,7 @@ import org.apache.spark.SparkConf
 import org.apache.spark.sql.SparkSession
 
 /**
-  * requirement 
+  * requirement  Spark工具类
   *
   * @author zhangsl
   * @date 2019/12/6 14:14 

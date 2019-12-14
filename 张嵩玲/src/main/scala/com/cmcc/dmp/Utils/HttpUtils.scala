@@ -8,7 +8,7 @@ import org.apache.http.impl.client.{CloseableHttpClient, HttpClients}
 import org.apache.http.util.EntityUtils
 
 /**
-  * requirement 
+  * requirement  http请求高德地图，获取Json串
   *
   * @author zhangsl
   * @date 2019/12/9 21:28 

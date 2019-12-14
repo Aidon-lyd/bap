@@ -28,7 +28,11 @@ object LocationField {
     }
   }
 
-
+  /**
+    * 原始请求数
+    * @param dataFrame
+    * @return
+    */
   def getOriginalReqTotal(dataFrame: DataFrame):DataFrame = {
     val originalCondition = (col(s"${ConstantValue.REQUESTMODE}")===lit(RequestEnum.Request.getCode)
       and col(s"${ConstantValue.PROCESSNODE}")>=lit(FlowNodeEnum.TotalRequest.getCode))
@@ -40,6 +44,11 @@ object LocationField {
     return originalReqTotal
   }
 
+  /**
+    * 有效请求数
+    * @param dataFrame
+    * @return
+    */
   def getValidReqTotal(dataFrame: DataFrame):DataFrame = {
     val validCondition = (col(s"${ConstantValue.REQUESTMODE}")===lit(RequestEnum.Request.getCode)
       and col(s"${ConstantValue.PROCESSNODE}")>=lit(FlowNodeEnum.Valid.getCode))
@@ -51,6 +60,11 @@ object LocationField {
     return validReqTotal
   }
 
+  /**
+    * 广告请求数
+    * @param dataFrame
+    * @return
+    */
   def getAdvertisingReqTotal(dataFrame: DataFrame):DataFrame = {
     val advertisingCondition = (col(s"${ConstantValue.REQUESTMODE}")===lit(RequestEnum.Request.getCode)
       and col(s"${ConstantValue.PROCESSNODE}")>=lit(FlowNodeEnum.Advertising.getCode))
@@ -62,6 +76,11 @@ object LocationField {
     return advertisingReqTotal
   }
 
+  /**
+    * 参与竞价数
+    * @param dataFrame
+    * @return
+    */
   def getBiddingTotal(dataFrame: DataFrame):DataFrame = {
     val biddingCondition = (col(s"${ConstantValue.ISEFFECTIVE}") === "1"
           and col(s"${ConstantValue.ISBILLING}") === "1"
@@ -75,6 +94,11 @@ object LocationField {
     return biddingTotal
   }
 
+  /**
+    * 竞价成功数
+    * @param dataFrame
+    * @return
+    */
   def getBiddingSuccTotal(dataFrame: DataFrame):DataFrame = {
         val biddingSuccCondition = (col(s"${ConstantValue.ISEFFECTIVE}") === "1"
           and col(s"${ConstantValue.ISBILLING}") === "1"

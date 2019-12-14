@@ -4,7 +4,7 @@ import java.util.Arrays;
 import java.util.List;
 
 /**
- * requirement
+ * requirement  动作枚举类
  *
  * @author zhangsl
  * @version 1.0

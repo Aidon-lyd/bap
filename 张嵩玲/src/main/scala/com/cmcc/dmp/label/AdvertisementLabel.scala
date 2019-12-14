@@ -2,7 +2,7 @@ package com.cmcc.dmp.label
 
 import com.cmcc.dmp.Utils.{DmpLOGObjrct, HBaseUtils, LabelUtils, SparkHelper}
 import com.cmcc.dmp.label.businessLabel.getBusinessLabelTest
-import com.typesafe.config.ConfigFactory
+
 import org.apache.commons.lang3.StringUtils
 import org.apache.spark.broadcast.Broadcast
 import org.apache.spark.{SparkConf, SparkContext}
@@ -16,7 +16,7 @@ import scala.language.postfixOps
 
 
 /**
-  * requirement 
+  * requirement  聚合标签写入HBase
   *
   * @author zhangsl
   * @date 2019/12/7 10:38 
