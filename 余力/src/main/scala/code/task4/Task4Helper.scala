@@ -9,14 +9,25 @@ object Task4Helper {
 
   /**
     * Get Column Format One Likes
-    *
     * @return
     */
   def getColumnFormatOne() = {
     val columns = new ArrayBuffer[String]()
-    //The following column is not sure now
-    columns.+=("uuid")
-
+    columns.+=("imei")
+    columns.+=("mac")
+    columns.+=("idfa")
+    columns.+=("openudid")
+    columns.+=("androidid")
+    columns.+=("imeimd5")
+    columns.+=("macmd5")
+    columns.+=("idfamd5")
+    columns.+=("openudidmd5")
+    columns.+=("androididmd5")
+    columns.+=("imeisha1")
+    columns.+=("macsha1")
+    columns.+=("idfasha1")
+    columns.+=("openudidsha1")
+    columns.+=("androididsha1")
     columns.+=("concat('LC',if(adspacetype < 10,concat('0',adspacetype),adspacetype)) as adSpaceTypeTagLC")
     columns.+=("concat('LN',adspacetypename) as adSpaceTypeTagLN")
     //May need to be Optimized By using appDict
