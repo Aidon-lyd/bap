@@ -1,7 +1,8 @@
-package com.yigang.flink.function
+package com.yigang.function
 
 import java.sql.{Connection, DriverManager}
 
+import com.yigang.utils.DBCPUtil
 import org.apache.flink.streaming.api.functions.sink.{RichSinkFunction, SinkFunction}
 
 /**
@@ -14,13 +15,8 @@ import org.apache.flink.streaming.api.functions.sink.{RichSinkFunction, SinkFunc
   */
 object FailCntToMySQL extends RichSinkFunction[Tuple2[String,Int]]{
 
-  val url = "jdbc:mysql://hadoop01:3306/shucang1?useUnicode=true&characterEncoding=utf-8&useSSL=false"
-  val user = "root"
-  val pas = "WYG666sdx!"
-
   override def invoke(value: (String, Int), context: SinkFunction.Context[_]): Unit = {
-    Class.forName("com.mysql.jdbc.Driver");
-    val conn: Connection = DriverManager.getConnection(url,user,pas)
+    val conn: Connection = DBCPUtil.getConnection
     val sql = "INSERT into failcnt(pro,cnt) values(?,?) on duplicate key update cnt=?"
     val statement = conn.prepareStatement(sql)
     statement.setString(1,value._1.toString)

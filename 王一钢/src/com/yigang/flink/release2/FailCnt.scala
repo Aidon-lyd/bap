@@ -3,7 +3,7 @@ package com.yigang.flink.release2
 import java.util.Properties
 
 import com.alibaba.fastjson.JSON
-import com.yigang.flink.function.FailCntToMySQL
+import com.yigang.function.FailCntToMySQL
 import com.yigang.test.Source_Demo
 import com.yigang.utils.DateUtil
 import org.apache.flink.api.common.functions.FilterFunction
